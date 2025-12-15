@@ -1,3 +1,5 @@
+/* Extra small */
+
 /* Links */
 a {
     color: #1EBBD7;
@@ -11,6 +13,7 @@ a:hover {
 }
 
 /* Barra de navegacion */
+
 .navbar-brand {
     color: #1EBBD7;
     font-weight: bold;
@@ -48,6 +51,17 @@ a:hover {
 
 /* Pagina de Inicio */
 
+
+.primera-columna-fila-1-productos-destacados,
+.segunda-columna-fila-1-productos-destacados,
+.tercera-columna-fila-1-productos-destacados,
+.cuarta-columna-fila-1-productos-destacados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* Pagina Baquetas */
 .primera-columna-fila-1-baquetas,
 .segunda-columna-fila-1-baquetas,
@@ -65,7 +79,10 @@ a:hover {
     justify-content: center;
 }
 
+
+
 .primera-columna-fila-3-baquetas {
+  
     display: flex;
     justify-content: center;
 }
@@ -80,6 +97,37 @@ a:hover {
 .segunda-columna-fila-1-cables {
     display: flex;
     justify-content: center;
+}
+
+/* Cuerdas de Guitarra */
+
+.primera-columna-fila-1-cuerdas-de-guitarra,
+.segunda-columna-fila-1-cuerdas-de-guitarra,
+.tercera-columna-fila-1-cuerdas-de-guitarra,
+.cuarta-columna-fila-1-cuerdas-de-guitarra {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.primera-columna-fila-2-cuerdas-de-guitarra,
+.segunda-columna-fila-2-cuerdas-de-guitarra,
+.tercera-columna-fila-2-cuerdas-de-guitarra,
+.cuarta-columna-fila-2-cuerdas-de-guitarra {
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.primera-columna-fila-3-cuerdas-de-guitarra,
+.segunda-columna-fila-3-cuerdas-de-guitarra,
+.tercera-columna-fila-3-cuerdas-de-guitarra,
+.cuarta-columna-fila-3-cuerdas-de-guitarra {
+   
+    display: flex;
+    justify-content: center;
+
 }
 
 /* Pagina Accesorios de guitarra */
@@ -175,6 +223,11 @@ a:hover {
 
 .precio-productos {
     color: #1EBBD7;
+}
+
+.productos-columna-derecha div a {
+   
+    margin-left: 0;
 }
 
 
@@ -308,13 +361,26 @@ a:hover {
     align-items: center;
 }
 
+/* Pantallas Small */
+
+@media (min-width: 576px) {}
+
 /* Pantallas Medium */
+
 
 @media (min-width: 768px) {
 
+    /* Pagina de Inicio */
+  
+
+    .primera-columna-fila-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     .productos-columna-derecha {
-        /* border: 2px solid blue; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -347,11 +413,13 @@ a:hover {
     /* Pagina baquetas */
 
     .primera-columna-fila-3-baquetas {
-        display: flex;
-        flex-direction: column;
         justify-content: flex-start;
-        padding-left: 1.2rem;
+        margin-left: 1rem;
 
+    }
+
+    .segunda-columna-fila-3-baquetas {
+        border: 2px solid green;
     }
 
     /* Pagina cables */
@@ -383,4 +451,24 @@ a:hover {
     }
 
 
+}
+
+/* Pantallas Large */
+@media(min-width: 992px) {
+
+    /* Barra de navegacion */
+    .navbar-nav {
+        
+        align-items: center;
+    }
+
+    /* Pantalla de Inicio */
+    .cuarta-columna-fila-1-productos-destacados {
+        justify-content: flex-start;
+    }
+
+    /* Pagina baquetas */
+  
+
+   
 }
